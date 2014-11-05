@@ -26,19 +26,19 @@ cure_otoshiro = [
 	"データ出たか？",
 	"あっ、いえ・・・",
 	"絶対音感みたいだ",
+	"ならやってみればいい。そんな簡単なものじゃないぞ",
 	]
 
 module.exports = (robot) ->
 	robot.hear /:seira|@seira/, (msg) ->
 		msg.send msg.random cure_otoshiro
 
-	robot.hear /音城|セイラ|ｾｲﾗ/i, (msg) ->
+	robot.hear /音城|おとしろ|セイラ|ｾｲﾗ/i, (msg) ->
 		msg.send msg.random [
 			"テンション高いな",
 			"いいから！",
 			"はい、どうぞ",
 			"何で私のこと？",
-			"ならやってみればいい。そんな簡単なものじゃないぞ。",
 			"いえ、なんかいいですこういうの",
 			"はい？",
 		]
@@ -49,7 +49,7 @@ module.exports = (robot) ->
 			"ドレミファソラシドってイタリア語なんだ",
 		]
 
-	robot.hear /星宮|いちご/i, (msg) ->
+	robot.hear /星宮|ほしみや|いちご/i, (msg) ->
 		msg.send msg.random [
 			"入試のオーディションでもスペシャルアピールを出したらしい",
 			"ほんとそのパソコンきいの友達みたいだな",
@@ -58,7 +58,7 @@ module.exports = (robot) ->
 			"星宮いちご！アメリカに行ってるんじゃなかったのか？"
 		]
 
-	robot.hear /冴草|きい/i, (msg) ->
+	robot.hear /冴草|さえぐさ|きい/i, (msg) ->
 		msg.send msg.random [
 			"きい？",
 			"ほんとそのパソコンきいの友達みたいだな",
@@ -85,14 +85,14 @@ module.exports = (robot) ->
 			"お互い頑張ろう",
 		]
 
-	robot.hear /(ご|御)(飯|はん)/i, (msg) ->
+	robot.hear /(御|ご)(飯|はん)/i, (msg) ->
 		msg.send msg.random [
 			"私もごはんは進んでる。ちなみに言えばパスタ派だけどね！",
 			"のり弁2つ",
 			"お腹いっぱいになるほど、星宮いちごのことがわかったってこと。やっぱり強敵だな",
 		]
 
-	robot.hear /(霧矢|きりや)|あおい/i, (msg) ->
+	robot.hear /霧矢|きりや|あおい/i, (msg) ->
 		msg.send msg.random [
 			"穏やかじゃない！",
 		]
