@@ -97,7 +97,7 @@ module.exports = (robot) ->
 			"ラララー！ラララー！",
 		]
 
-	robot.hear /(霧矢|きりや|)|あおい/i, (msg) ->
+	robot.hear /(霧矢|きりや)|あおい/i, (msg) ->
 		msg.send msg.random [
 			"穏やかじゃない！",
 		]
