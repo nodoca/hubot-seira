@@ -92,11 +92,6 @@ module.exports = (robot) ->
 			"お腹いっぱいになるほど、星宮いちごのことがわかったってこと。やっぱり強敵だな",
 		]
 
-	robot.hear /ラ|ﾗ/i, (msg) ->
-		msg.send msg.random [
-			"ラララー！ラララー！",
-		]
-
 	robot.hear /(霧矢|きりや)|あおい/i, (msg) ->
 		msg.send msg.random [
 			"穏やかじゃない！",
